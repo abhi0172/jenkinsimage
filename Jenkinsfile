@@ -8,7 +8,7 @@ pipeline {
 				git 'https://github.com/abhi0172/jenkinsimage.git'
 				}
 			}
-  	stage("Image") {
+  		stage("Image") {
 			steps {
 				sh 'sudo docker build -t jenkinsbuild .'
 				sh 'sudo docker tag java-repo:$BUILD_TAG abhishek0322/jenkinsbuild:$BUILD_TAG'
