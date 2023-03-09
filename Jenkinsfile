@@ -14,3 +14,4 @@ pipeline {
 				sh 'sudo docker tag java-repo:$BUILD_TAG abhishek0322/jenkinsbuild:$BUILD_TAG'
 				}
 			}
+	 }
